@@ -1,0 +1,311 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Hero */
+.features-hero {
+  background: linear-gradient(135deg, #f7f9ff, #eef3ff);
+}
+.hero-title {
+  font-size: 32px !important;
+  text-align: unset !important;
+  font-weight: 700;
+  color: #333333;
+  max-width: 520px;
+}
+
+.hero-title span {
+  color: #2454ff;
+}
+
+.hero-text {
+  font-size: 18px;
+  color: #6b7280;
+  max-width: 520px;
+  margin-top: 20px;
+}
+
+/* Hero Card */
+
+.hero-card {
+  background: linear-gradient(135deg, #f7f9ff, #eef3ff);
+  border: 1px solid #e8edff;
+  border-radius: 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 230px;
+  box-shadow: 0 10px 35px rgba(37, 84, 255, 0.08);
+}
+
+.result-box {
+  background: #fff;
+  border-radius: 18px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.result-box small {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.result-box h3 {
+  margin: 4px 0 0;
+  color: #18a957;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.check-circle {
+  width: 65px;
+  height: 65px;
+  background: rgba(24, 169, 87, 0.12);
+  color: #18a957;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.lab-icon i {
+  font-size: 95px;
+  color: #c4d2ff;
+}
+
+/* Feature Cards */
+
+.feature-card {
+  background: #fff;
+  border: 1px solid #edf0f7;
+  border-radius: 22px;
+  padding: 32px 28px;
+  height: 100%;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(37, 84, 255, 0.12);
+}
+
+.icon-box {
+  width: 58px;
+  height: 58px;
+  background: #eef3ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.icon-box i {
+  font-size: 34px;
+  color: #2454ff;
+}
+
+.feature-card h4, .card-header h4 {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  color: #15306b;
+  margin-top: 6px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+.feature-card a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #2454ff;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-card a:hover {
+  color: #15306b;
+}
+
+/* CTA Card */
+
+.cta-card {
+  background: linear-gradient(135deg, #edf3ff, #f6f8ff);
+  border-radius: 24px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid #e5ebff;
+}
+
+.cta-icon {
+  width: 110px;
+  height: 110px;
+  min-width: 110px;
+  border-radius: 24px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(37, 84, 255, 0.08);
+}
+
+.cta-icon i {
+  font-size: 54px;
+  color: #2454ff;
+}
+
+.cta-content h3 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #15306b;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  color: #6b7280;
+  line-height: 1.8;
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+
+.cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.cta-actions .btn {
+  padding: 5px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  background: #2454ff;
+  border: none;
+}
+
+.cta-actions .btn:hover {
+  background: #15306b;
+}
+
+.cta-actions span {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.cta-actions span a {
+  text-decoration: none;
+  color: #2454ff;
+  font-weight: 700;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-card {
+    min-height: auto;
+  }
+
+  .cta-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .feature-card {
+    padding: 28px 24px;
+  }
+
+  .feature-card h4 {
+    font-size: 22px;
+  }
+
+  .cta-card {
+    padding: 30px;
+  }
+
+  .cta-content h3 {
+    font-size: 28px;
+  }
+
+  .result-box h3 {
+    font-size: 28px;
+  }
+
+  .lab-icon i {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .hero-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .result-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .feature-card h4 {
+    font-size: 20px;
+  }
+
+  .cta-content h3 {
+    font-size: 24px;
+  }
+}
+
+.card {
+  /* padding: 0 !important; */
+}
+.card-header {
+  background-color: unset;
+  border-bottom: unset;
+  display: flex;
+  align-items: center;
+}
+.card-footer {
+  background-color: unset;
+  border-top: unset;
+}
+.card-footer a {
+  color: #2454ff;
+  text-align: right;
+}
