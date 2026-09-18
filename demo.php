@@ -92,6 +92,9 @@ include "header_inc.php";
                             <!--<input type="text" name="designation" class="form-control" placeholder="Designation">-->
                             <select class="form-select" name="source">
                                 <option selected>Select Designation</option>
+                                <option value="erp">ERP Admin</option>
+                                <option value="chm">Chairman</option>
+                                <option value="dir">Director</option>
                                 <option value="ppl">Principal</option>
                                 <option value="vpl">Vice Principal</option>
                                 <option value="hod">Head of Department</option>
@@ -107,6 +110,7 @@ include "header_inc.php";
                                 <option value="con">Counsellor</option>
                                 <option value="adm">Administrator</option>
                                 <option value="hrm">HR Manager</option>
+                                <option value="drv">Driver</option>
                                 <option value="exe">Executive</option>
                             </select>                            
                         </div>
